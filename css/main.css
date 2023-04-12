@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 :root {
   --primary-color: #373737;
   --secondary-color: #d9d9d9;
@@ -53,7 +57,6 @@ a:hover {
 body {
   position: relative;
   background: var(--secondary-color);
-  padding: 40px 30px;
 }
 
 body span#footer-email {
@@ -66,15 +69,9 @@ body span#footer-email {
   font-size: 14px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   body span#footer-email {
-    bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    padding: 20px 15px;
+    bottom: 6px;
   }
 }
 
@@ -89,25 +86,28 @@ section, footer {
 }
 
 .body-wrapper {
-  border: 1px solid var(--primary-color);
-  padding: 10px;
-}
-
-@media screen and (max-width: 1280px) {
-  .body-wrapper {
-    border-top: none;
-    border-right: none;
-    border-left: none;
-  }
+  padding: 40px 30px;
 }
 
 @media screen and (max-width: 991px) {
   .body-wrapper {
-    padding: 0;
+    padding: 15px 10px;
   }
 }
 
-#homepage .body-wrapper {
+.border {
+  border: 1px solid var(--primary-color) !important;
+}
+
+@media screen and (max-width: 991px) {
+  .border {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+  }
+}
+
+#homepage .border {
   height: 95vh;
 }
 
@@ -154,6 +154,10 @@ section, footer {
 }
 
 /* Navbar */
+.navbar {
+  padding: 20px;
+}
+
 .navbar .navbar-toggler {
   margin-left: auto;
   border: none;
@@ -168,8 +172,13 @@ section, footer {
 
 @media screen and (max-width: 767px) {
   .navbar .navbar-collapse {
-    margin-top: 20px;
     margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .navbar .navbar-collapse {
+    margin-top: 20px;
   }
 }
 
@@ -177,7 +186,7 @@ section, footer {
   gap: 55px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 575px) {
   .navbar .navbar-nav {
     gap: 20px;
   }
