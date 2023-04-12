@@ -1,0 +1,17 @@
+@keyframes slowRotate {
+    0% {
+        transform: rotate3d(1, 1, 10, 20deg);
+    }
+
+    50% {
+        transform: rotate3d(1, 1, 1, -20deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 10, 20deg);
+    }
+}
+
+img {
+    animation: slowRotate 4s ease infinite;
+}

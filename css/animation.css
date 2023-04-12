@@ -1,0 +1,35 @@
+@-webkit-keyframes slowRotate {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 10, 20deg);
+            transform: rotate3d(1, 1, 10, 20deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 1, 1, -20deg);
+            transform: rotate3d(1, 1, 1, -20deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 10, 20deg);
+            transform: rotate3d(1, 1, 10, 20deg);
+  }
+}
+
+@keyframes slowRotate {
+  0% {
+    -webkit-transform: rotate3d(1, 1, 10, 20deg);
+            transform: rotate3d(1, 1, 10, 20deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 1, 1, -20deg);
+            transform: rotate3d(1, 1, 1, -20deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(1, 1, 10, 20deg);
+            transform: rotate3d(1, 1, 10, 20deg);
+  }
+}
+
+img {
+  -webkit-animation: slowRotate 4s ease infinite;
+          animation: slowRotate 4s ease infinite;
+}
+/*# sourceMappingURL=animation.css.map */
